@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>E-Hospital</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+.registerbtn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+.registerbtn:hover {
+  opacity:1;
+}
+
+
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+.center {
+  margin: auto;
+  width: 60%;
+  border: 3px solid #4d00dbc5;
+  padding: 10px;
+}
+
+</style>
+</head>
+<body>
+
+ 
+  
+  <h2><a href = '/'> <p style="text-align:center;">Heart Disease Prediction</p></a></h2>
+   
+  <div class="center">
+  <form action="/predict"method="post">
+<input type="text" name="enter age" placeholder="enter age" required="required"/>
+<input type="text" name="enter sex 0:female, 1:male" placeholder="enter sex 0:female, 1:male" required="required"/>
+<input type="text" name="chest pain type (4 values)" placeholder="chest pain type (values 0,1,2,3)" required="required" />
+<input type="text" name="resting blood pressure" placeholder="resting blood pressure" required="required" /> 
+<input type="text" name="serum cholestoral in mg/dl" placeholder="serum cholestoral in mg/dl" required="required" />
+<input type="text" name="fasting blood sugar > 120 mg/dl" placeholder="fasting blood sugar > 120 mg/dl" required="required" />  
+<input type="text" name="resting electrocardiographic results (values 0,1,2)" placeholder="resting electrocardiographic results (values 0,1,2)"required="required" />
+<input type="text" name="maximum heart rate achieved" placeholder="maximum heart rate achieved" required="required" />
+<input type="text" name="exercise induced angina" placeholder="exercise induced angina" required="required" />
+<input type="text" name="enter value" placeholder="enter value" required="required"/>
+<input type="text" name="enter value 0:normal, 1:upsloping, 2:downsloping" placeholder="enter value 0:normal, 1:upsloping, 2:downsloping" required="required"/>
+<input type="text" name="enter ca number" placeholder="enter ca number" required="required"/>
+<input type="text" name="enter thalassemia value" placeholder="enter thalassemia value" required="required"/>
+<button type="submit" class="registerbtn">Predict</button>
+</form>
+</div>
+
+  </body>
+  </html>
+  
