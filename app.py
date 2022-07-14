@@ -54,9 +54,9 @@ def predict():
         lst += [1 , 0]
     else:
         lst += [0 ,1 ]
-    oldpeak = float(request.form["enter value"])
+    oldpeak = float(request.form["enter oldpeak value"])
     lst += [oldpeak]
-    slope = int(request.form["enter value 0:normal, 1:upsloping, 2:downsloping"])
+    slope = int(request.form["enter slope value 0:normal, 1:upsloping, 2:downsloping"])
     if slope == 0:
         lst += [1 ,0 ,0]
     elif slope == 1:
